@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Header.css';
 
-export default class Home extends Component {
+export default class Header extends Component {
 	render() {
 		return (
-			<div className="home">
+			<div className="header">
 				<div className="name">Samuel Coleman</div>
 				<div className="nav-container">
 					<button className="nav-btn">My Story</button>

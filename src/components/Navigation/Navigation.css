@@ -3,10 +3,17 @@
 	display: flex;
 	background: black;
 	flex-direction: row;
+	justify-content: space-around;
 }
 
 .nav-btn {
 	color: white;
 	background: black;
 	border: none;
+	font-size: 20px;
+}
+
+.nav-btn:hover {
+	color: black;
+	background: white;
 }

@@ -1,3 +1,12 @@
 .navigation {
-	grid-area: navigation
+	grid-area: navigation;
+	display: flex;
+	background: black;
+	flex-direction: row;
+}
+
+.nav-btn {
+	color: white;
+	background: black;
+	border: none;
 }

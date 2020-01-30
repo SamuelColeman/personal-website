@@ -6,7 +6,7 @@ export default class Navigation extends Component {
 		return (
 			<div className="navigation">
 				<button className="nav-btn">Resume</button>
-				<button className="nav-btn">My Story</button>
+				<button className="nav-btn">About Me</button>
 				<button className="nav-btn">Projects</button>
 				<button className="nav-btn">Experience</button>
 			</div>

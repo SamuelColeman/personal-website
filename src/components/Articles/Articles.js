@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import './Articles.css';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import Resume from '../Resume/Resume';
 
-export default class Articles extends Component {
+export class Articles extends Component {
 	render() {
+		const { currentArticle } = this.props;
 		return (
 			<div className="articles">
-				<div>Articles Go Here</div>
+				{currentArticle && currentArticle}
 			</div>
 		)
 	}
 }
+
+export const mapStateToProps = (state) => ({
+  currentArticle: state.currentArticle
+});
+
+export default connect(mapStateToProps)(Articles);

@@ -14,9 +14,9 @@ export class Navigation extends Component {
 
 	render() {
 		return (
-			<div className="navigation">
+			<div className="Navigation">
 				<button className="nav-btn" value="Resume" onClick={this.handleChange}>Resume</button>
-				<button className="nav-btn" value="About Me" onClick={this.handleChange}>About Me</button>
+				<button className="nav-btn" value="AboutMe" onClick={this.handleChange}>About Me</button>
 				<button className="nav-btn" value="Projects" onClick={this.handleChange}>Projects</button>
 				<button className="nav-btn" value="Experience" onClick={this.handleChange}>Experience</button>
 			</div>

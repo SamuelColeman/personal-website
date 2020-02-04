@@ -1,4 +1,4 @@
-.header {
+.Header {
   grid-area: header;
   display: flex;
 	flex-direction: column;

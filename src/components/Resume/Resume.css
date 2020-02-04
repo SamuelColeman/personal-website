@@ -1,0 +1,8 @@
+.Resume {
+	max-height: 100vh;
+	overflow: scroll;
+}
+
+.resume-img {
+	width: 100%;
+}

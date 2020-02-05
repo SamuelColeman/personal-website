@@ -12,6 +12,7 @@ export default class Header extends Component {
 					<div>Coleman</div>
 				</div>
 				<div className="contact_info">
+					<div>Software Engineer</div>
 					<div>smcoleman19@gmail.com</div>
 					<div>(615)734-9776</div>
 				</div>

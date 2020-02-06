@@ -1,5 +1,4 @@
 .Navigation {
-	grid-area: navigation;
 	display: flex;
 	background: gray;
 	flex-direction: row;

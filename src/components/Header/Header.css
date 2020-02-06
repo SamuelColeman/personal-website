@@ -1,27 +1,21 @@
 .Header {
-  grid-area: header;
   display: flex;
 	flex-direction: column;
   align-items: center;
-  background: black;
+  background-image: url('../../images/dark-forest.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 80vh;
+  height: 80vh;
 }
 
 .name {
 	font-size: 40px;
 	font-weight: 400;
-	padding: 25px;
+	padding-top: 60vh;
 	color: white;
 }
 
-.contact_info {
+.title {
+	font-size: 25px;
 	color: white;
-	display: flex;
-	flex-direction: column;
-}
-
-.user_img {
-	width: 70%;
-	height: 30vh;
-	border-radius: 100%;
-	margin: 20px;
 }

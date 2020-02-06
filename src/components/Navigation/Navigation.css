@@ -4,6 +4,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	border: none;
+	min-height: 10vh;
 }
 
 .nav-btn {

@@ -9,8 +9,8 @@ import AboutMe from '../AboutMe/AboutMe';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Navigation />
+      <Header />
       <Articles />
     </div>
   );

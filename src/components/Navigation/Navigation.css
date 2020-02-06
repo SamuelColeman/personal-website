@@ -1,14 +1,15 @@
 .Navigation {
 	display: flex;
-	background: #00090F;
+	background: #3C464F;
 	flex-direction: row;
 	justify-content: space-around;
 	border: none;
+	min-height: 10vh;
 }
 
 .nav-btn {
 	color: white;
-	background: #00090F;
+	background: #3C464F;
 	border: none;
 	font-size: 20px;
 }

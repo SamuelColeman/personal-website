@@ -1,14 +1,14 @@
 .Navigation {
-	grid-area: navigation;
 	display: flex;
-	background: gray;
+	background: #00090F;
 	flex-direction: row;
 	justify-content: space-around;
+	border: none;
 }
 
 .nav-btn {
 	color: white;
-	background: gray;
+	background: #00090F;
 	border: none;
 	font-size: 20px;
 }

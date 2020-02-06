@@ -4,12 +4,27 @@ import { connect } from 'react-redux';
 import './Navigation.css';
 import { updateArticle } from '../../actions';
 import Resume from '../Resume/Resume';
+import { getProjects, getSchools } from '../../apiCalls';
 
 export class Navigation extends Component {
+	constructor() {
+		super();
+		this.state = {
+			projects: [],
+			schools: []
+		}
+	}
 
-	handleChange = (e) => {
+	handleChange = async (e) => {
 		const { updateArticle } = this.props;
 		updateArticle(e.target.value);
+		if (e.target.value === "Projects") {
+			const projects = await getProjects();
+			this.setState({ projects });
+		} else if (e.target.value === "Experience") {
+			const schools = await getSchools();
+			this.setState({ schools });
+		}
 	}
 
 	render() {

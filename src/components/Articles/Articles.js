@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import './Articles.css';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Resume from '../Resume/Resume';
 import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
+import Skills from '../Skills/Skills';
+import Education from '../Education/Education';
 
 export class Articles extends Component {
 	render() {
 		const options = {
-			Resume,
+			Skills,
+			Education,
 			AboutMe,
 			Projects,
 			Experience

@@ -8,13 +8,13 @@
 }
 
 .nav-btn {
-	color: white;
+	color: #EBEBEB;
 	background: #3C464F;
 	border: none;
 	font-size: 20px;
 }
 
 .nav-btn:hover {
-	color: black;
-	background: white;
+	color: #3C464F;
+	background: #EBEBEB;
 }

@@ -3,7 +3,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import './Navigation.css';
 import { updateArticle } from '../../actions';
-import Resume from '../Resume/Resume';
 import { getProjects, getSchools } from '../../apiCalls';
 
 export class Navigation extends Component {
@@ -30,10 +29,12 @@ export class Navigation extends Component {
 	render() {
 		return (
 			<div className="Navigation">
-				<button className="nav-btn" value="Resume" onClick={this.handleChange}>Resume</button>
 				<button className="nav-btn" value="AboutMe" onClick={this.handleChange}>About Me</button>
 				<button className="nav-btn" value="Projects" onClick={this.handleChange}>Projects</button>
+				<button className="nav-btn" value="Skills" onClick={this.handleChange}>Skills</button>
+				<button className="nav-btn" value="Education" onClick={this.handleChange}>Education</button>
 				<button className="nav-btn" value="Experience" onClick={this.handleChange}>Experience</button>
+				<button className="nav-btn" value="ContactInfo" onClick={this.handleChange}>Contact</button>
 			</div>
 		)
 	}

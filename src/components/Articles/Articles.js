@@ -7,6 +7,7 @@ import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
 import Skills from '../Skills/Skills';
 import Education from '../Education/Education';
+import Header from '../Header/Header';
 
 export class Articles extends Component {
 	render() {
@@ -20,7 +21,8 @@ export class Articles extends Component {
 		const CurrentArticle = options[this.props.currentArticle];
 		return (
 			<div className="Articles">
-				{CurrentArticle && <CurrentArticle />}
+				<Header />
+				<AboutMe />
 			</div>
 		)
 	}

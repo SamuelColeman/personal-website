@@ -10,7 +10,7 @@ export class Navigation extends Component {
 		super();
 		this.state = {
 			projects: [],
-			schools: []
+			education: []
 		}
 	}
 
@@ -20,10 +20,11 @@ export class Navigation extends Component {
 		if (e.target.value === "Projects") {
 			const projects = await getProjects();
 			this.setState({ projects });
-		} else if (e.target.value === "Experience") {
-			const schools = await getSchools();
-			this.setState({ schools });
+		} else if (e.target.value === "Education") {
+			const education = await getSchools();
+			this.setState({ education });
 		}
+		console.log(this.state)
 	}
 
 	render() {
@@ -32,7 +33,7 @@ export class Navigation extends Component {
 				<button className="nav-btn" value="AboutMe" onClick={this.handleChange}>About Me</button>
 				<button className="nav-btn" value="Projects" onClick={this.handleChange}>Projects</button>
 				<button className="nav-btn" value="Skills" onClick={this.handleChange}>Skills</button>
-				<button className="nav-btn" value="Education" onClick={this.handleChange}>Education</button>
+				<button className="nav-btn" value="Education" onClick={this.handleChange} education={this.state.education}>Education</button>
 				<button className="nav-btn" value="Experience" onClick={this.handleChange}>Experience</button>
 				<button className="nav-btn" value="ContactInfo" onClick={this.handleChange}>Contact</button>
 			</div>
